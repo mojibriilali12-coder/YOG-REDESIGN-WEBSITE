@@ -455,8 +455,11 @@ i{
       color: #343a40;
 }
 
+
+
+
 .service-container{
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -495,7 +498,7 @@ i{
     background-color: #0bceaf;
     color: white;
     width: 60px;
-    height: 62px;
+    height: 58px;
     font-size: 26px;
     border-radius: 50%;
 }
@@ -503,12 +506,15 @@ i{
     display: flex;
     align-items: center;
     margin: 10px;
+     line-height: 27px;
+    
 }
 
 .services-title{
     text-align: center;
     margin-top: 120px;
     margin-bottom: 65px;
+    font-size: 40px;
     color: #0bceaf;
 }
 .service-para{
@@ -520,3 +526,79 @@ a{
     text-align: center;
     color: #0bceaf;
 }
+
+.services-subtitle{
+     font-size: 24px;
+    
+}
+
+
+/* PORTFOLIO SECTION */
+
+img{
+    width: 100%;
+}
+
+.portfolio-container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.portifolio-title{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.all{
+    height: 100px;
+    
+}
+
+.portfolio{
+   
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 images per row */
+  gap: 25px;
+ 
+    
+}
+
+.portfolio{
+     width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+img{
+    border-radius: 5px;
+    height: auto;
+     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* .portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+}
+
+.web-portfolio{
+    display: grid;
+    grid-column: 1/ span 1;
+}
+
+.web2-portfolio{
+    display: grid;
+    grid-column: 2 / span 2;
+}
+
+.web3-portfolio{
+    display: grid;
+    grid-column: 3 / span 3;
+} */
