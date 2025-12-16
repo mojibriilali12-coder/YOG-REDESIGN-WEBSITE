@@ -229,7 +229,7 @@ background-size: cover;
 
     margin-left: 480px;
     color: #0bceaf;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     margin-top: 120px;
     margin-bottom: 15px;
@@ -246,6 +246,8 @@ background-size: cover;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* EDUCTION & EXPERIENCE */
 
 .container{
     max-width: 1110px;
@@ -313,7 +315,7 @@ background-size: cover;
 
 .edex-title{
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     margin-top: 118px;
     text-transform: uppercase;
@@ -348,12 +350,7 @@ p{
     line-height: 26px;
 }
 
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
+/* SKILLS SECTION */
 
 .skill-container{
     max-width: 1110px;
@@ -391,22 +388,7 @@ p{
     
    
 }
-/* .skill-middle{
-    width: 300px;
 
-     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
-     padding: 20px;
-      margin-inline: 10px;
-    
-}
-.skill-Right{
-    width: 300px;
-    grid-column: 3/ span 3;
-     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
-     padding: 20px;
-      margin-inline: 10px;
-   
-} */
 .skill-para{
 
 }
@@ -417,7 +399,7 @@ p{
     text-align: center;
     margin-top: 70px;
     color: #0bceaf;
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 50px;
 
 }
@@ -514,7 +496,7 @@ i{
     text-align: center;
     margin-top: 120px;
     margin-bottom: 65px;
-    font-size: 40px;
+    font-size: 35px;
     color: #0bceaf;
 }
 .service-para{
@@ -554,6 +536,8 @@ img{
 .portifolio-title{
     text-align: center;
     margin-top: 100px;
+    font-size: 35px;
+    color: #0bceaf;
 }
 
 .all{
@@ -582,23 +566,3 @@ img{
 }
 
 
-/* .portfolio-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-}
-
-.web-portfolio{
-    display: grid;
-    grid-column: 1/ span 1;
-}
-
-.web2-portfolio{
-    display: grid;
-    grid-column: 2 / span 2;
-}
-
-.web3-portfolio{
-    display: grid;
-    grid-column: 3 / span 3;
-} */
