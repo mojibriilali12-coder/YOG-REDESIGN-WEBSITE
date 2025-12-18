@@ -20,6 +20,7 @@ header{
     top: 0;
     width: 100%;
     background-color: #ffffff;
+    height: 75px;
 }
 
    
@@ -128,11 +129,19 @@ background-size: cover;
     font-weight: 700;
     text-transform: uppercase;
 }
+.ii{
+    text-transform: uppercase;
+    color: white;
+}
 
 #iam{
     color: white;
     text-transform: lowercase;
+   
+   
 }
+
+
 .download-cv{
     background-color: #0bceaf;
     color: white;
@@ -150,6 +159,7 @@ background-size: cover;
     font-weight: 700;
     color: white;
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     margin-top: 20px;
 }
 .i{
     text-transform: uppercase;
@@ -159,6 +169,7 @@ background-size: cover;
     color: rgb(253, 251, 251);
     font-size: 18px;
     font-weight: 500;
+    margin-top: 20px;
 }
 
 .about-header{
@@ -628,6 +639,7 @@ input{
     border: none;
     border: 1px solid rgb(179, 176, 176);
     font-size: 16px;
+    
 }
 
 
@@ -656,3 +668,55 @@ textarea{
 }
 
 
+/* FOOTER SECTION */
+
+.footer{
+    background-color: #0bceaf;
+    width: 100%;
+   padding: 70px;
+   margin-top: 60px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+
+}
+
+.social-footer{
+    background-color: white;
+   padding: 15px 25px 12px 21px;
+
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+.privacy-terms{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+    font-weight: 600;
+    color: white;
+}
+.copywrite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-top: 20px;
+     color: white;
+}
+
+.ptfh{
+    color: white;
+}
+
+#copyrights{
+    color: white;
+    padding: 5px;
+}
