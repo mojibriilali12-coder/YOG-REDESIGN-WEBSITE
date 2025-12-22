@@ -10,12 +10,12 @@
 body{
     font-family: "roboto", sans-serif;
     background-color: #ffffff;
- 
-   
    
 }
 
-header{
+/* MENU SECTION */
+
+.desktop-menu{
     position: fixed;
     top: 0;
     width: 100%;
@@ -60,6 +60,13 @@ header{
      font-weight:700;
 }
 
+
+.humbarger{
+    display: none;
+
+}
+
+
 button{
     height: 45px;
     width: 120px;
@@ -75,15 +82,10 @@ button:hover{
     background-color: #0bceaf;
     color: white;
 }
-/* .image{
-    width: 100%;
-} */
 
-.container{
-    
-  
-    
-}
+
+
+/* HERO SECTION */
 
 .hero-section{
     width: 100%;
@@ -138,9 +140,7 @@ background-size: cover;
     color: white;
     text-transform: lowercase;
    
-   
 }
-
 
 .download-cv{
     background-color: #0bceaf;
@@ -171,6 +171,10 @@ background-size: cover;
     font-weight: 500;
     margin-top: 20px;
 }
+
+
+
+/* ABOUT SECTION */
 
 .about-header{
     margin-top: 150px;
@@ -249,25 +253,11 @@ background-size: cover;
 
 
 
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* EDUCTION & EXPERIENCE */
 
 .container{
     max-width: 1110px;
-    margin: 0 auto;
-     
-    /* background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.1); */
- 
+    margin: 0 auto; 
 }
 
 
@@ -277,8 +267,6 @@ background-size: cover;
    gap: 30px;
    padding: 40px;
 
-   
-  
 }
 
 .ed-info{
@@ -289,7 +277,6 @@ background-size: cover;
 }
 
 .ex-info{
-    /* background-color: rgb(218, 17, 17); */
    width: 100%;
      display: grid;
     grid-column: 2/span 2;
@@ -303,16 +290,7 @@ background-size: cover;
 .experience{
     line-height: 36px;
 }
-/* 
-.univer{
-    display: flex;
-  flex-direction: row;
-}
 
-.date{
-    display: flex;
-   flex-direction: row;
-} */
 
 .graduation{
     display: flex;
@@ -332,9 +310,6 @@ background-size: cover;
     text-transform: uppercase;
     color: #0bceaf;
     margin-bottom: 20px;
-
-   
-   
 }
 
 .ed-title , .ex-title{
@@ -361,6 +336,9 @@ p{
     line-height: 26px;
 }
 
+
+
+
 /* SKILLS SECTION */
 
 .skill-container{
@@ -371,12 +349,7 @@ p{
 .skills{
    display: flex;
    align-items: center;
-   justify-content: center;
- 
-   
-     /* margin-top: 40px;
-       width: 100% */
-    
+   justify-content: center;   
    
 }
 
@@ -385,9 +358,6 @@ p{
  align-items: center;
   flex-wrap:wrap;
     height: 300px;
-   
- 
-    
    
 }
 .skill{
@@ -400,12 +370,7 @@ p{
    
 }
 
-.skill-para{
 
-}
-.skills{
-  
-}
 .skill-title{
     text-align: center;
     margin-top: 70px;
@@ -439,9 +404,6 @@ p{
    
     color:#0bceaf;
 }
-i{
-    /* margin-left: 100px; */
-}
 
 .skill-subtitle{
     font-size:20px;
@@ -450,6 +412,7 @@ i{
 
 
 
+/* services section */
 
 .service-container{
     max-width: 1000px;
@@ -560,7 +523,7 @@ img{
 .portfolio{
    
     display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 2 images per row */
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
  
     
@@ -578,11 +541,6 @@ img{
 }
 
 
-/* MY BLOG */
-
-/* img{
-  max-width: 300px;
- } */
 
 .blog-container{
     max-width: 1110px;
@@ -688,9 +646,9 @@ textarea{
 
 .social-footer{
     background-color: white;
-   padding: 15px 25px 12px 21px;
-
-    
+    width: 40px;
+    height: 40px;
+    align-items: center;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -719,4 +677,38 @@ textarea{
 #copyrights{
     color: white;
     padding: 5px;
+}
+
+
+
+
+/* RESPOSIVE SECTION */
+
+/* tablets & mobile */
+
+@media(max-width:768px){
+    .navbar{
+        display: none;
+    }
+ 
+    
+    .humbarger{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10%;
+        background-color: #0bceaf;
+        color: white;
+        right: 5%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 2rem;
+
+    }
+    .image{
+          display: none;
+    }
+ 
 }
