@@ -14,16 +14,41 @@
  
   <!-- HEADER SECTION -->
   
-    <header class="desktop-menu">
+    <header>
+
+
+      
+      <nav class="mobile-menu" data-visible="true">
+        <div class="navigation">
+    <h1 class="logo"><span class="moha">Moh</span>amud</h1>
+          <ul class="menu-links">
+
+            <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Quality</a></li>
+                <li><a href="">Skill</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Review</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                   <button>Hire me</button>
+
+          </ul>
+
+        </div>
+      </nav>
+
+      
       <div class="humbarger">
-      <!-- <i class="fa-solid fa-bars"></i> -->
-      <i class="fa-solid fa-close"></i>
+      <i class="fa-solid fa-bars" data-visible="true></i>
+      <i class="fa-solid fa-close" data-visible="false"></i>
       </div>
       
-        <nav class="navbar">
+        <nav class="desktop-menu">
           
             <h1 class="logo"><span class="moha">Moh</span>amud</h1>
-            <ul class="nav-menu">
+            <ul class="menu-links">
                 
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -34,10 +59,44 @@
                 <li><a href="">Review</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
+                <button>Hire me</button>
             </ul>
-            <button>Hire me</button>
+            
         </nav>
+      
+        
+
     </header>
+
+   
+
+
+ <script>
+       const humbarger = document.querySelector('.humbarger');
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const icons = document.querySelectorAll("i");
+
+        humbarger.addEventListener("click", function (event) {
+            const isVisible = mobileMenu.getAttribute('data-visible');
+            if (isVisible == "true") {
+                // qari hiding
+                mobileMenu.setAttribute('data-visible', "false");
+                icons[0].setAttribute('data-visible', "true");
+                icons[1].setAttribute('data-visible', "false");
+            } else if (isVisible == "false") {
+                // soo bandhig showing
+                mobileMenu.setAttribute('data-visible', "true");
+                icons[0].setAttribute('data-visible', "false");
+                icons[1].setAttribute('data-visible', "true");
+            }
+        });
+
+    </script>
+
+
+
+
+
 
 
     

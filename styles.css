@@ -15,7 +15,7 @@ body{
 
 /* MENU SECTION */
 
-.desktop-menu{
+header{
     position: fixed;
     top: 0;
     width: 100%;
@@ -24,20 +24,22 @@ body{
 }
 
    
-.navbar{
+.desktop-menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
     height: 70px;
 }
+
+
 .logo{
     font-size: 38px;
     cursor: pointer;
 }
 
 
-.nav-menu{
+.menu-links{
     display: flex;
     align-items: center;
     list-style: none;
@@ -45,13 +47,13 @@ body{
      
 }
 
-.navbar .nav-menu a{
+.desktop-menu .menu-links a{
     text-decoration: none;
     color: rgb(78, 74, 74);
     font-weight: 700;
    
 }
-.navbar .nav-menu a:hover{
+.desktop-menu.menu-links a:hover{
     color:#0bceaf;
 }
 .moha{
@@ -684,14 +686,31 @@ textarea{
 
 /* RESPOSIVE SECTION */
 
+
+
 /* tablets & mobile */
 
+@media(max-width:1024px){
+   
+     .mobile-menu{
+        display: none;
+     }
+}
+
+
+
 @media(max-width:768px){
-    .navbar{
+    .desktop-menu{
         display: none;
     }
- 
+    header{
+        height: 0;
+    }
     
+i{
+    z-index: 1111;
+}
+
     .humbarger{
         display:flex;
         justify-content: center;
@@ -707,8 +726,60 @@ textarea{
         font-size: 2rem;
 
     }
+     
+    .mobile-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        background-color:#0bceaf;
+        inset: 0 0 0 0;
+        transform: translateX(0%);
+        transition: transform 1s ease-in-out;
+        color: white;
+     }
+
+     .mobile-menu[data-visible="false"]{
+        transform: translateX(100%);
+     }
+
+     .humbarger i[data-visible="true"]{
+        display: block;
+     }
+
+     .humbarger i[data-visible="false"]{
+        display: none;
+     }
+
+     .mobile-menu .navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+     }
+     .mobile-menu .navigation .menu-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+     }
+       a{
+       text-decoration: none;
+       color: white;
+       
+       }
     .image{
           display: none;
+    }
+    .logo .moha{
+        color: white;
+    }
+    .logo {
+        border-bottom: 1px solid white;
+        padding: 10px;
     }
  
 }
