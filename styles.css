@@ -47,6 +47,10 @@ header{
      
 }
 
+.mobile-menu{
+    display: none;
+}
+
 .desktop-menu .menu-links a{
     text-decoration: none;
     color: rgb(78, 74, 74);
@@ -94,7 +98,7 @@ button:hover{
     height: 550px;
     margin: 0 auto;
   display: flex;
-    flex-direction: row;
+    flex-direction: column;
   padding: 40px;
   margin-top: 70px;
   background-color: #0bceaf;
@@ -735,6 +739,7 @@ i{
         position: fixed;
         background-color:#0bceaf;
         inset: 0 0 0 0;
+     
         transform: translateX(0%);
         transition: transform 1s ease-in-out;
         color: white;
@@ -762,18 +767,19 @@ i{
      .mobile-menu .navigation .menu-links{
         display: flex;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
         flex-direction: column;
         
      }
        a{
        text-decoration: none;
        color: white;
+       font-size: 22px;
+       font-weight: 600;
+       padding: 10px;
        
        }
-    .image{
-          display: none;
-    }
+   
     .logo .moha{
         color: white;
     }
@@ -781,5 +787,9 @@ i{
         border-bottom: 1px solid white;
         padding: 10px;
     }
- 
+    .hire-me{
+        width: 300px;
+    }
+    
+    
 }
